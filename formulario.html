@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Web</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f9;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formulario de Contacto</h1>
+  <form action="procesar.php" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" placeholder="Tu correo" required>
+    
+    <label for="telefono">telefono:</label>
+    <input type="telefono" id="telefono" name="telefono" placeholder="Tu numero" required>
+
+    <label for="fecha">fecha:</label>
+    <input type="fecha" id="fecha" name="fecha" placeholder="fecha" required>
+
+    <label for="medio">medio:</label>
+    <input type="medio" id="medio" name="medio" placeholder="medio" required>
+
+    <label for="mensaje">mensaje:</label>
+    <input type="mensaje" id="mensaje" name="mensaje" placeholder="mensaje" required>
+
+
+    <a class="btn" href="file:///C:/Users/Esteban%20y%20sofia/OneDrive/Terpel/Consecionaria%20de%20Autos/index.html">Enviar</a>
+  </form>
+</body>
+</html>
